@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Fonts i brug-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <title>Carka Cakes</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            background-color: gray;
+            height: 515px;
+        }
+
+
+        #navbar {
+            z-index: 10000;
+            overflow: hidden;
+            padding: 30px 10px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: mistyrose;
+
+        }
+
+        #navbar a {
+            float: left;
+            color: black;
+            padding: 12px 12px;
+            text-decoration: none;
+            font-size: 20px;
+            justify-content: center;
+            width: 12.5%;
+        }
+
+        #navbar a:hover {
+            font-weight: 500;
+            color: black;
+        }
+
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky {
+            padding-top: 60px;
+        }
+
+        #menu {
+
+            text-align: center;
+        }
+
+        #menu1 {
+
+            text-align: center;
+        }
+
+        #menu2 {
+
+            text-align: center;
+        }
+
+        #menu3 {
+
+            text-align: center;
+        }
+
+        #menu4 {
+
+            text-align: center;
+        }
+
+        #menu5 {
+
+            text-align: center;
+        }
+
+        #menu6 {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: -8px;
+        }
+
+        .row {
+            margin-top: 0px;
+            margin-bottom: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .col-8 {
+            border: solid 1.5px;
+            border-color: #f1f1f1;
+            text-align: justify;
+        }
+
+        .square {
+            height: 400px;
+            width: 400px;
+            background-color: #555;
+        }
+
+        .squared {
+            height: 600px;
+            width: 400px;
+            background-color: #555;
+        }
+
+        .squaredd {
+            height: 500px;
+            width: 400px;
+            background-color: #555;
+        }
+
+        .overskrift {
+            font-family: 'Spartan', sans-serif;
+            margin-top: 50px;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .opslag {
+            font-family: 'Spartan', sans-serif;
+            margin-top: 50px;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .pic {
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dato {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: gray;
+
+        }
+
+        .laesmere {
+            color: black;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        .laesmere:hover {
+            color: black;
+            font-weight: 500;
+        }
+
+        .quiz {
+            color: white;
+            background-color: #ffafa6;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .quiz:hover {
+            color: white;
+            font-weight: 500;
+        }
+
+        .over-footer {
+            justify-content: center;
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            background-color: mistyrose;
+        }
+
+        .social {
+            margin-bottom: 50px;
+        }
+
+        .footer {
+            background-color: mistyrose;
+        }
+
+        form {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .nyhedsoverskrift {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            width: 70%;
+            border: solid 1.5px;
+            border-color: #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=submit] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #f1f1f1;
+            box-sizing: border-box;
+        }
+
+        input[type=checkbox] {
+            margin-top: 16px;
+        }
+
+        input[type=submit] {
+            background-color: #ffafa6;
+            color: white;
+            border: none;
+            width: 30%;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.8;
+            font-weight: 500;
+        }
+
+        .om-os {
+            width: 100%;
+        }
+
+
+        @media only screen and (max-width: 1300px) {
+            #navbar a {
+                font-size: 15px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            #navbar a {
+                font-size: 13px;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #navbar a {
+                font-size: 11px;
+            }
+
+        @media only screen and (max-width: 900px) {
+             #navbar a {
+                font-size: 10px;
+             }
+
+        @media only screen and (max-width: 850px) {
+            #navbar a {
+              font-size: 9px;
+            }
+
+        @media only screen and (max-width: 800px) {
+               #navbar a {
+                 font-size: 8px;
+             }
+
+
+         @media only screen and (max-width: 750px) {
+                #navbar a {
+                    font-size: 7px;
+                 display: none;
+              }
+             
+         @media only screen and (max-width: 800px) {
+                #burgernav a {
+                 display: none;
+              } 
+                 
+                            
+    
+            
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <!--HEADER MED VIDEO-->
+    <div class="header">
+    </div>
+
+    <!--MENUEN-->
+    <div id="navbar">
+        <a href="javascript:void(0)" id="menu">Opskrifter</a>
+        <a href="javascript:void(0)" id="menu1">Om os</a>
+        <a href="javascript:void(0)" id="menu2">Søg<img src="https://img.icons8.com/material-sharp/24/000000/search.png" style="width: 17px;" /></a>
+        <a href="javascript:void(0)" style="width:23.8%"><img src="logoet-kopi.png" id="menu6" style="width:85%;"></a>
+        <a href="javascript:void(0)" id="menu5"><img src="https://img.icons8.com/ios-glyphs/30/000000/login-rounded-right.png" style="width: 17px;" />Log på</a>
+        <a href="javascript:void(0)" id="menu4">Kontakt</a>
+        <a href="javascript:void(0)" id="menu3" style="width:13.6%"><img src="https://img.icons8.com/ios/50/000000/lock.png" style="width: 17px;margin-top: -5px;" />Bliv medlem</a>
+    </div>
+    
+    
+    <!--BURGERMENU-->
+    <div id="burgernav" class="dropdown">
+      <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdoen" id="servicesDropdown" aria-hashpopup="true" aria-expanded="false" href="#">Menu</a>
+      
+      <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+         <a class="dropdown-item" href="#">Opskrifter</a>
+         <a class="dropdown-item" href="#">Om os</a>
+         <a class="dropdown-item" href="#">Søg</a>
+         <a class="dropdown-item" href="#">Log på</a>
+         <a class="dropdown-item" href="#">Kontakt</a>
+         <a class="dropdown-item" href="#">Bliv medlem</a>
+         
+          
+      </div>
+       
+        
+    </div>
+
+
+
+    <!--1. SEKTION-->
+    <div class="row">
+        <div class="col-8" style="border: none;">
+            <h1 class="opslag">NYESTE OPSLAG</h1>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-8">
+            <h1 class="overskrift">Maregnskage med hvidchokoladecreme og friske bær</h1>
+            <br>
+            <p class="dato">25. APRIL 2020</p>
+            <img src="pavlova.jpg" class="pic">
+            <p style="margin: 40px 40px 0px 40px;">Maregnskage med hvidchokoladecreme og friske bær bliver også kaldt Pavlova. Det er en pragtfuld dessert, med sin sprøde porøse marengsbund, der bliver bagt og tilberedt, så den er knasende sprød uden på og stadig en anelse blød inden i. Fyldt med hvide chokoladecreme og toppet med bær og/eller frugt – alt efter sæson.<br><br> Vi laver oftest pavlova til dessert om sommeren og først på efteråret. Når der er friske bær i sæson. Uanset årstid, så fyld alt det dejlige frugt i din pavlova. Figner er også herligt og i foråret er den herlig med vaniljeis – pisket til en let softice, groftrevet chokolade og letsyltede rabarber.</p>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h5>INGREDIENSER</h5><br>
+                    Margensbund:
+                    <ul>
+                        <li>6 æggehvider</li>
+                        <li>...</li>
+                    </ul>
+                    <br>
+                    <a href="#" target="_blank" class="laesmere">Læs hele opskriften her</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-6">
+                    <h5>SÅDAN GØR DU</h5><br>
+                    Maregensbund:
+                    <ol>
+                        <li>Tænd ovnen på 130 grader. Pisk æggehviderne stive med lidt...
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <p style="text-align: justify;border: solid 1.5px;border-color: #f1f1f1;padding: 15px;"><img src="om-os.jpg" class="om-os"><br><br>Kære dig <img src="https://img.icons8.com/android/24/000000/like.png" style="width: 17px;" /><br>
+                Velkommen indenfor i vores søde univers.<br>
+                Vi hedder Caroline, Karina og Caroline, og vores helt store passion er at bage og udvikle opskrifter, som vi deler her på vores blog CarkaCakes.
+
+                Vi elsker at være kreative, og glæde os selv og andre med det vi kreere.
+                Vi håber vi kan inspirere dig til at prøve nogle af vores opskrifter.
+                Følg med på vores Instagram og youtube for mere inspiration og ‘’how to’’ videoer.</p>
+        </div>
+    </div>
+
+    <!--2. SEKTION-->
+    <div class="row" style="margin-top: 50px;">
+        <div class="col">
+            <h1 class="overskrift">TAG QUIZZEN</h1>
+            <p style="margin: 20px 40px 0px 40px;">Har du styr på dine måleenheder? Det kan også godt drille lidt en gang i mellem. Man bruger målenheder når man bager, laver mad - og drinks! Vi vil hjælpe dig med at bruge og forstå målenhederne korrekt!<br><br>Hvor meget er 1 Liter? hvad betyder milli-? og Hvor meget er 100 gram i kg? Det er nogle af de spørgsmål du kommer ud for i Carka Cakes' quiz. Vil vi gerne være med til at styrke dit kendskab til måleenheder og skala. Så du bliver helt ferm til det i køkkenet!
+                <br><br><br>
+                <button id="start" class="quiz">TAG QUIZ!</button>
+                <p id="result" style="margin: 10px 40px 40px 40px;"></p>
+        </div>
+    </div>
+
+    <!--3. SEKTION-->
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-8">
+            <h1 class="overskrift">Hindbærmoussekage med chokoladebund</h1>
+            <br>
+            <p class="dato">19. APRIL 2020</p>
+            <img src="headerpic.jpg" class="pic">
+            <p style="margin: 40px 40px 0px 40px;text-align: justify;">Hindbærmoussekage er altså ren og ægte nydelse!<br><br>Den lækreste fyldige chokoladekagebund og den friske luftige mousse med en frugtrig bærsmag og syrlighed spiller simpelthen så godt sammen og er jo virkelig en fin kagedessert at servere. Vi kan godt lide at pynte den med bær på toppen. Du går sjældent galt i byen med en brownie, for det er de færreste, der kan modstå den lækkerbisken. Opskriften består af flere trin, så vil du gøre det lidt nemmere for dig selv, kan du gå i gang med at bage chokoladebunden en dag før, du skal servere den.</p>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h5>INGREDIENSER</h5><br>
+                    Chokoladebund:
+                    <ul>
+                        <li>200 g mørk chokolade, finthakket</li>
+                        <li>...</li>
+                    </ul>
+                    <br>
+                    <a href="#" target="_blank" class="laesmere">Læs hele opskriften her</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-6">
+                    <h5>SÅDAN GØR DU</h5><br>
+                    Chokoladekagebund:
+                    <ol>
+                        <li>Smelt smør i en gryde ved middelvarme. Pisk imens æg, sukker og vaniljekorn til...
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="square"></div><br>
+            <p>Her kan vores Google Ad banner</p>
+            <div class="square"></div><br>
+            <p>Lille reklame for en anden opskrift</p>
+        </div>
+    </div>
+
+    <!--4. SEKTION-->
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-8">
+            <h1 class="overskrift">Pandekager</h1>
+            <br>
+            <p class="dato">15. APRIL 2020</p>
+            <img src="pandekage.jpg" class="pic">
+            <p style="margin: 40px 40px 0px 40px;" id="pandekage">Tynde lækre pandekager lige til at rulle eller servere med ens eget favoritfyld og tilbehør. Vores bedste opskrift på pandekager er nem og den giver virkelig nogle lækre pandekager med virkelig god smag af vanilje. Vi elsker pandekager og spiser det så tit vi kan. Pandekager er på en eller anden måde noget der altid kan samle hele familien. Vi spiser for det meste pandekager med sukker eller marmelade, men de kan jo fyldes med alle mulige lækre sager. F.eks. friske bær, saltkaramel, kompot, hakket chokolade, flødeskum og Nutella! Hvad spiser du på dine pandekager? <br><br>Hvis man har en øl, pilsner eller nisseøl i gemmerne – så kom gerne lidt i dejen, det giver en god sprødhed til pandekagerne – men det kan sagtens undlades, hvis man ikke har og pandekagerne bliver dejlige og lækre alligevel.</p>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h5>INGREDIENSER</h5><br>
+                    Pandekagedej:
+                    <ul>
+                        <li>1 tsk vaniljesukker</li>
+                        <li>...</li>
+                    </ul>
+                    <br>
+                    <a href="#" target="_blank" class="laesmere">Læs hele opskriften her</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-6">
+                    <h5>SÅDAN GØR DU</h5><br>
+                    Pandekagedej:
+                    <ol>
+                        <li>Bland vaniljesukker, sukker og mel sammen. Derefter pisk godt med alle æggene...
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="squaredd"></div><br>
+            <p>LOG IN FUNKTION</p>
+        </div>
+    </div>
+
+    <!--5. SEKTION-->
+    <div class="row" style="margin-top: 50px;margin-bottom: 50px">
+        <div class="col">
+            <h1 class="overskrift">NYHEDSBREV</h1>
+            <br>
+            <form action="/action_page.php">
+                <div class="container" style="border-bottom:0px;">
+                    <h3 class="nyhedsoverskrift">Tilmed dig Carka Cakes ugentlige nyhedsbrev her</h3>
+                    <br>
+                    <p>Modtag spændende nye opskrifter hver uge og hold dig opdateret på vores univers.<br>*Du kan altid afmelde dig igen.</p>
+                </div>
+                <div class="container" style="background-color:white;border-bottom:0px;border-top:0px;">
+                    <input type="text" placeholder="Navn:" name="name" required>
+                    <input type="text" placeholder="E-mail:" name="mail" required>
+                </div>
+                <div class="container" style="border-top:0px;">
+                    <input type="submit" value="Tilmeld">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="over-footer">
+        <p style="margin-top: 50px;">Følg os her</p>
+    </div>
+    <div class="over-footer">
+        <div class="social"><a href="#insta"><img src="instagram-logo-png-2428.png" style="width: 27px;margin-right:15px;"></a>
+            <a href="#facebook"><img src="face-trans.png" style="width: 25px;"></a>
+            <a href="#youtube"><img src="youtube-logo-png-2088.png" style="width: 25px; margin-left: 15px;"></a></div>
+    </div>
+    <div class="footer">
+        <div class="row" style="margin: 0px; padding: 15px 15px 0px 15px;">
+            <div class="col">
+                <a href="#" style="color: black;">Om os</a>
+            </div>
+            <div class="col">
+                <p style="text-align: center;color: black;">© Carka Cakes 2020</p>
+            </div>
+            <div class="col" style="text-align: right;">
+                <a href="#" style="color: black;">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="background-color: #323232">
+        <div class="row" style="margin: 0px; padding: 15px 15px 15px 15px;">
+            <div class="col">
+                <a href="#" style="color: white;">Handelsbetingelser</a>
+            </div>
+            <div class="col" style="text-align: right;">
+                <a href="#" style="color: white;">Personoplysninger og cookies</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //menuen bliver mindre
+        window.onscroll = function() {
+            {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 495 || document.documentElement.scrollTop > 495) {
+                    document.getElementById("navbar").style.padding = "10px 10px";
+                    document.getElementById("menu").style.fontSize = "16px";
+                    document.getElementById("menu1").style.fontSize = "16px";
+                    document.getElementById("menu2").style.fontSize = "16px";
+                    document.getElementById("menu3").style.fontSize = "16px";
+                    document.getElementById("menu4").style.fontSize = "16px";
+                    document.getElementById("menu5").style.fontSize = "16px";
+                    document.getElementById("menu6").style.width = "65%";
+                    document.getElementById("menu6").style.marginTop = "-5px";
+                } else {
+                    document.getElementById("navbar").style.padding = "30px 10px";
+                    document.getElementById("menu").style.fontSize = "18px";
+                    document.getElementById("menu1").style.fontSize = "18px";
+                    document.getElementById("menu2").style.fontSize = "18px";
+                    document.getElementById("menu3").style.fontSize = "18px";
+                    document.getElementById("menu4").style.fontSize = "18px";
+                    document.getElementById("menu5").style.fontSize = "18px";
+                    document.getElementById("menu6").style.width = "85%";
+                    document.getElementById("menu6").style.marginTop = "-8px";
+                }
+            }
+            myFunction()
+        };
+
+        //MENUEN STICKY I TOPPEN
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        //QUIZ STARTER HER
+        // globale variabler - synlige for hele skriptet
+        var questions, score, feedback, button;
+
+        score = 0;
+        button = document.getElementById('start');
+        button.addEventListener('click', runQuiz);
+
+        feedback = document.getElementById('result');
+
+        // 2-dimensionel array
+        questions = [
+            ['Hvor meget er en deciliter i milliliter?', 100], // questions[0]
+            ['1000 gram i kg er?', 1],
+            ['Hvor meget er 1 liter i deciliter?', 10],
+            ['2 kg i gram?', 2000],
+            ['Hvor meget er 500 milliliter i liter?', 0.5],
+            ['50 gram i kg?', 0.05]
+        ];
+
+        // console.log(questions[0][0]); udgiver How many moons does Earth have? i konsolen.
+
+        function runQuiz() {
+            // loop igennem array questions
+            for (var i = 0; i < questions.length; i++) {
+                askQuestion(questions[i]); // iterationer med kald til funktionen med parameter variablen i
+            };
+            giveFeedback(); // kalder funktionen feedback, når quizzet er afsluttet
+        }
+
+        function askQuestion(array) { // funktion med argument
+            //console.log(array[1]);
+            // lokal variable med nøgleord let
+            let answer = parseInt(prompt(array[0], '')); //skaber en prompt dialog med mulighed for bruger input
+            // parseInt forvandler en string til et helt nummer (integer)
+            if (answer === array[1]) { // i tilfælde af et rigtig svar
+                alert('Correct!');
+                score++;
+            } else { // forkert svar
+                alert('Desværre, det korrekte svar er ' + array[1])
+            }
+        }
+
+        function giveFeedback() {
+            feedback.innerHTML = 'Du fik ' + score + ' ud af ' + questions.length + ' spørgsmål korrekt!';
+            button.removeEventListener('click', runQuiz); // quiz er afsluttet og kan ikke startes igen.
+        }
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
